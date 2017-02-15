@@ -4,9 +4,9 @@
 	<title>Entry</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/introHCI.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/introHCI.css" rel="stylesheet">
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,30 +19,40 @@
 
 <body>
 	<header id="main-nav-bar">
-		<a href="/index" id="back-button">
+		<a href="/" id="back-button">
 			<img src="images/back-icon-128.png" class="icon">
 		</a>
-		<img src="images/edit-icon.png" class="icon" id="edit-button">
+		<a href="" id="edit-button">
+			<img src="images/edit-icon.png" class="icon">
+		</a>
 	</header>
 	<div class="container">
-		<div class="time-bar" >
-			<p id="entry-time">8:33 AM Sat. Feb 10, 2017</p>
+
+		<div class="time-bar">
+			<p>Sat. Feb 10, 2017</p>
 		</div>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
 		<div class="entry clearfix">
 			<div class="emoji-block">
-				<img src="images/emoji/1f600.png" alt="" class="emoji" id="entry-emoji" data-toggle="modal">
+				<img src="images/emoji/1f600.png" alt="" class="emoji">
+				<div class="time"> 8:33 AM </div>
 			</div>
 			<a href="">
-				<img src="http://lorempixel.com/300/200/" class="entry-image" id="entry-image" data-toggle="modal" data-target="#image-modal">
+				<img src="http://lorempixel.com/300/200/" class="entry-image" data-toggle="modal" data-target="#myModal">
 			</a>
-			<textarea class="edit-text-entry" id="edit-text" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+				<div class="text-entry"> 
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 		</div>
-
 		<!-- modal -->
-		<div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -54,48 +64,11 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="modal fade" id="emoji-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h5 class="text-center">Choose another emoji. :D</h5>
-			</div>
-			<div class="modal-body">
-				<table class="emoji-table" id="emoji-table">
-					<script>
-						document.writeln("<tr>");
-						var cnt=0;	
-						{{#each emojis}}
-							document.writeln('<div><td><img src={{imageURL}} id={{id}} class="emojis" width=40px height=40px></td></div>');	
-							cnt++;
-							if(cnt%6==0){
-								document.writeln("</tr><tr>");
-							}
-						{{/each}}
-						document.writeln("</tr>");
-					</script>
-				</table>
-			</div>
-
-            </div>
-          </div>
         </div>  
 	</div>
-	<a href="" id="delete-button">Delete</a>
 
-	<div class="button-row">
-		<a href="/" id="cancel-button">Cancel</a>
-		<a href="" id="save-button">Save</a>
-	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
-
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="js/entry.js"></script>
-
 </body>
 </html>

@@ -26,15 +26,13 @@ div.ui-datepicker td {
 }
 
 .container {
-	width: 100%;
-	height: 100%;
+	width: 320px;
 	margin:0 auto;
-
 	text-align: center;
 }
 
 .time-bar {
-	font-size: 5vw;
+	font-size: 30px;
 	margin-top: 5px;
 	display: inline-block;
 }
@@ -50,10 +48,6 @@ div.ui-datepicker td {
 .emoji-block {
 	width: 25%;
 	float: left;
-}
-
-.emoji-table {
-	width: 100%;
 }
 
 .emoji {
@@ -136,56 +130,17 @@ img {
 	border-bottom: none;
 }
 
-.button-row {
-	margin-top: 10px;
-	display: inline-block;
-}
 
-#save-button {
-	position: fixed;
-    bottom: 0px;
-    right: 0px;
-	/*float: right;*/
-	background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 50%;
-    cursor: pointer;
-}
-
-#cancel-button {
-	position: fixed;
-    bottom: 0px;
-    left: 0px;
-	/*float: left;*/
-	background-color: #DE6461;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 50%;
-    cursor: pointer;
-}
 
 /*table, th, td {*/
    /*border: 1px solid black;*/
 /*}*/
 
-.emoji-table{
-	border-radius: 25px;
-    border: 2px solid #b3d9ff;
-    padding: 20px;
-    text-align: left;
-    margin-bottom: 10px;
-}
+/*.emoji_table{*/
+	/*padding: 5px;*/
+	/*border-radius: 30px;*/
+	/*border: 4px solid skyblue;*/
+/*}*/
 
 .selected{
 	border-radius: 10px;
@@ -195,212 +150,9 @@ img {
 .buttons{
 	border-radius: 10px;
 	border: 3px solid skyblue;
+	/*background-color: lightcyan;*/
 }
 
-#textareaAtAdd{
-	font-size: 15px;
-}
-
-
-#delete-button {
-	background-color: #FF0000;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    margin-left: 5%;
-    margin-bottom: 60px;
-}
-
-.button-row {
-	margin-top: 10px;
-	display: block;
-}
-
-#save-button {
-	position: fixed;
-    bottom: 0px;
-    right: 0px;
-	background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    width: 50%;
-    cursor: pointer;
-}
-
-#cancel-button {
-	position: fixed;
-    bottom: 0px;
-    left: 0px;
-	background-color: #DE6461;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    width: 50%;
-    cursor: pointer;
-}
-
-.edit-text-entry {
-	width: 100%;
-	height: auto;
-	resize: none;
-	margin-top: 5px;
-    overflow-y: auto;
-	padding: 5px;
-}
-
-.edit-text-entry[disabled] {
-	background-color: #FFFFFF;
-	border: none;
-	color: #000000;
-}
-
-.inputShadow{
-	box-shadow: 2px 2px 2px 0px #dddddd;
-}
-/* for login page */
-
-.login-container{
-    position: relative;
-    width: 90%;
-    height: 70%;
-    margin: 15px auto;
-    padding: 20px 40px 40px;
-    text-align: center;
-    background: #fff;
-    border: 1px solid #ccc;
-}
-
-#output{
-    position: relative;
-    width: 100%;
-    margin-top:15px;
-    left: 0;
-    color: #fff;
-    padding: 10px 20px;
-}
-
-button[name="login-submit"].alert-success{
-    background: rgb(25, 204, 25);
-    color:white;
-}
-
-#output.alert-danger{
-    background: rgb(228, 105, 105);
-}
-
-
-.login-container::before,.login-container::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 3.5px;
-    left: 0;
-    background: #fff;
-    z-index: -1;
-    -webkit-transform: rotateZ(4deg);
-    -moz-transform: rotateZ(4deg);
-    -ms-transform: rotateZ(4deg);
-    border: 1px solid #ccc;
-
-}
-
-.login-container::before{
-    top: 5px;
-    z-index: -2;
-    -webkit-transform: rotateZ(-2deg);
-     -moz-transform: rotateZ(-2deg);
-      -ms-transform: rotateZ(-2deg);
-
-}
-
-.avatar{
-    width: 125px;
-    height: 125px;
-    margin: 10px auto 30px;
-    border-radius: 100%;
-    border: 1px solid #aaa;
-    background-size: cover;
-}
-
-.form-box input{
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    height:40px;
-    border: 1px solid #ccc;;
-    background: #fafafa;
-    transition:0.2s ease-in-out;
-
-}
-
-.form-box input:focus{
-    outline: 0;
-    background: #eee;
-}
-
-.form-box input[type="text"]{
-    border-radius: 5px 5px 0 0;
-    text-transform: lowercase;
-}
-
-.form-box button.login{
-    margin-top:15px;
-    padding: 10px 20px;
-}
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
+#addText{
+	font-size: 20px;
 }

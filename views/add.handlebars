@@ -9,6 +9,12 @@
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+	
+	<!-- Audio Zone -->
+	<link href="audio/styles/app.css" rel="stylesheet" type="text/css">
+    <link href="audio/styles/install-button.css" rel="stylesheet" type="text/css">
+    <!-- End Of Audio Zone -->
+
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,9 +42,8 @@
 		<div class="clearfix">
 			<h3> How are you doing right now? </h3>
 		</div>
-		
-		<div  class="emoji-table">
-			<table style="width:100%">
+		<div style="padding-bottom:25px" >
+			<table style="width:100%"  class="emoji_table">
 				<script>
 					document.writeln("<tr>");
 					var cnt=0;	
@@ -53,31 +58,57 @@
 				</script>
 			</table>
 		</div>
-
-
-
-		<div style="margin: 10px">
+		<div style="padding-bottom:25px">
 			<table style="width:100%">
 				<td><img src="images/memo_button.png" class="buttons" id="memoButton" width=60px height = 60px></td>
-				<td><img src="images/camera_button.png" class="buttons" id="cameraButton" width=60px height = 60px></td>
+				<td><img src="images/camera_button.png" class="buttons" id="cameraButton" width=60px height = 60px></td>		
 				<td><img src="images/recorder_button.png" class="buttons" id="recorderButton" width=60px height = 60px></td>
 			</table>
 		</div>
 
-		<div class="form-group clearfix">
-	      	<textarea class="form-control" id="textareaAtAdd" rows="2"></textarea>
-	    </div>
-		
-	    <div class="button-row" style="margin-bottom: 50px">
-			<a href="/" id="cancel-button">Cancel</a>
-			<a href="" id="save-button">Save</a>
+		<div>
+			<form>
+	    		<div class="form-group" id="textareaAtAdd">
+	      		<textarea class="form-control" rows="3"  font-size: 30px></textarea>
+	    		</div>
+	  		</form>
 		</div>
 
+		<div>
+			<section class="main-controls">
+        	<canvas class="visualizer"></canvas>
+        	<div id="buttons">
+          		<button class="record">Record</button>
+          		<button class="stop">Stop</button>
+        		</div>
+      		</section>
+      	</div> 
 	</div>
+	<section class="sound-clips">
+        <!-- This is left here as a helper for testing the style of the clips
+        If you want to edit their appearance without having to record clips,
+        uncomment this and reload the page. Remember to comment it again when done!
+        -->
+           	<!-- <article class="clip">
+          		<audio controls></audio>
+          		<p>Sample clip name</p>
+          		<button class="delete">Delete</button>
+        	</article>
+ -->
+
+      </section>
+
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
-	<script src="js/introHCI.js"></script>
+	<script src="/js/introHCI.js"></script>
+
+	<!-- Audio Zone -->
+    <script src="/audio/scripts/install.js"></script>  
+    <!-- Below is your custom application script -->
+    <script src="/audio/scripts/app.js"></script>
+    <!-- End of Audio Zone -->
+
 </body>
 </html>
