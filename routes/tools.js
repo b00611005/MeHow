@@ -28,40 +28,40 @@ exports.addWeekday = function addWeekday(date) {
 
 exports.monthToString = function monthToString(date) {
 	switch(date.month) {
-		case 1:
+		case "01":
 			date.monthText = "Jan";
 			break;
-		case 2:
+		case "02":
 			date.monthText = "Feb";
 			break;
-		case 3:
+		case "03":
 			date.monthText = "Mar";
 			break;
-		case 4:
+		case "04":
 			date.monthText = "Apr";
 			break;
-		case 5:
+		case "05":
 			date.monthText = "May";
 			break;
-		case 6:
+		case "06":
 			date.monthText = "Jun";
 			break;
-		case 7:
+		case "07":
 			date.monthText = "Jul";
 			break;
-		case 8:
+		case "08":
 			date.monthText = "Aug";
 			break;
-		case 9:
+		case "09":
 			date.monthText = "Sep";
 			break;
-		case 10:
+		case "10":
 			date.monthText = "Oct";
 			break;
-		case 11:
+		case "11":
 			date.monthText = "Nov";
 			break;
-		case 12:
+		case "12":
 			date.monthText = "Dec";
 			break;
 	}

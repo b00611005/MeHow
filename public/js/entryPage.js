@@ -203,16 +203,17 @@ function save(e) {
     current_data.memo = $("#edit-text").val();
     data.memo = $("#edit-text").val();
 
-    current_data.time.hour = parseInt($('#datetime24').val().substr(0, 2));
-    current_data.time.minute = parseInt($('#datetime24').val().substr(3, 2));
-    current_data.date.month = parseInt($('#datetime24').val().substr(6, 2));
-    current_data.date.day = parseInt($('#datetime24').val().substr(9, 2));
-    current_data.date.year = parseInt($('#datetime24').val().substr(12, 4));
-    data.time.hour = parseInt($('#datetime24').val().substr(0, 2));
-    data.time.minute = parseInt($('#datetime24').val().substr(3, 2));
-    data.date.month = parseInt($('#datetime24').val().substr(6, 2));
-    data.date.day = parseInt($('#datetime24').val().substr(9, 2));
-    data.date.year = parseInt($('#datetime24').val().substr(12, 4));
+    current_data.time.hour = $('#datetime24').val().substr(0, 2);
+    current_data.time.minute = $('#datetime24').val().substr(3, 2);
+    current_data.date.month = $('#datetime24').val().substr(6, 2);
+    current_data.date.day = $('#datetime24').val().substr(9, 2);
+    current_data.date.year = $('#datetime24').val().substr(12, 4);
+
+    data.time.hour = $('#datetime24').val().substr(0, 2);
+    data.time.minute = $('#datetime24').val().substr(3, 2);
+    data.date.month = $('#datetime24').val().substr(6, 2);
+    data.date.day = $('#datetime24').val().substr(9, 2);
+    data.date.year = $('#datetime24').val().substr(12, 4);
 
     current_data.emoji = $("#entry-emoji").data("emojiid");
     current_data.emojiImageURL = $("#entry-emoji").attr("src");
