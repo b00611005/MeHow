@@ -16,7 +16,8 @@
     "express": "3.x",
     "express3-handlebars": "*",
     "moment" : "^2.14.1",
-    "sqlite3" : "*"
+    "sqlite3" : "*",
+    "randomstring" : "*"
   },
   "engines": {
     "node": "0.10.x"
