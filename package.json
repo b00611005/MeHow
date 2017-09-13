@@ -14,7 +14,8 @@
   "dependencies": {
     "body-parser": "^1.16.1",
     "express": "3.x",
-    "express3-handlebars": "*"
+    "express3-handlebars": "*",
+    "moment" : "^2.14.1"
   },
   "engines": {
     "node": "0.10.x"
