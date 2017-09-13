@@ -17,7 +17,8 @@
     "express3-handlebars": "*",
     "moment" : "^2.14.1",
     "sqlite3" : "*",
-    "randomstring" : "*"
+    "randomstring" : "*",
+    "firebase" : "*"
   },
   "engines": {
     "node": "0.10.x"
