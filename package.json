@@ -18,7 +18,8 @@
     "moment" : "^2.14.1",
     "sqlite3" : "*",
     "randomstring" : "*",
-    "firebase" : "*"
+    "firebase" : "*",
+    "s3" : "*"
   },
   "engines": {
     "node": "0.10.x"
